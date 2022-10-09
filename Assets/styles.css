@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.img-size {
+    width: 100px;
+    height: 100px;
+
+}
+
+
+
+.mainheadertxt {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 27px;
+    color: #ffffff;
+    margin-right: 2rem;
+
+
+
+}
+
+
+header {
+    background-color: #19212e;
+
+
+
+}
+
+
+.nav-list {
+    background-color: #19212e;
+    box-shadow: 0px 0px 10px var(grey);
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+.nav-item {
+    color: tomato;
+    list-style: none;
+    margin: 2rem;
+
+
+}
+
+
+body {
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    ;
+}
+
+#testimonial-grid-container {
+    padding: 5% 3%;
+
+}
+
+
+#testimonial1 {
+    background-color: #786892;
+    color: #ffffff;
+
+
+
+}
+
+#testimonial2 {
+    background-color: #48556a;
+    color: #ffffff;
+
+}
+
+#testimonial3 {
+    background-color: #19212e;
+    color: #ffffff;
+
+}
+
+
+#testimonial4 {
+    background-color: #ffffff;
+
+}
+
+
+#testimonial5 {
+    background-color: #19212e;
+    color: #ffffff;
+
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px;
+    font-size: 1.2rem;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid rgb(128, 115, 0);
+}
+
+.grid-item h2 {
+    margin-bottom: 20px;
+
+}
+
+
+/* container flex code */
+
+@media (min-width: 576px) {
+
+    #testimonial-grid-container,
+    #main-left,
+    #top,
+    #bottom {
+        display: flex;
+    }
+
+    #top,
+    #bottom {
+        flex-basis: 50%;
+    }
+
+
+    #testimonial1,
+    #testimonial4 {
+        flex-basis: 65%;
+
+
+
+    }
+
+    #testimonial2,
+    #testimonial3 {
+        flex-basis: 35%;
+
+
+    }
+
+
+
+    #testimonial-grid-container {
+        max-width: 1440px;
+        margin: 0 auto;
+
+    }
+
+    #testimonial5 {
+        flex-basis: 20%;
+    }
+
+    #main-left {
+        flex-direction: column;
+        flex-basis: 80%;
+
+    }
+
+
+    #main-left .grid-item {
+        margin-right: 15px;
+    }
+}
